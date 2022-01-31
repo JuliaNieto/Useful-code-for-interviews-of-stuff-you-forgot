@@ -1,0 +1,12 @@
+HOW TO CAPITALIZE THE FIRST LETTER OF AN ARRAY OF STRINGS: 
+
+        const names = ["alice", "bob", "charlie", "danielle"]// -->        ["Alice", "Bob", "Charlie", "Danielle"]
+      // 1.  first you take the array and map it to an arrow function
+      // 2. then you select the first element of the string (name[0]) and transfrom it to uppercase (toUpperCase()) and then updating the Array with it from the second element of the string
+      // in other words, you isolate the first letter, make it capital and then stitch it back to the array removing the element in index 0 and updating it with the new element
+      const capitalized = names.map((name) => {
+          return name[0].toUpperCase() + name.slice(1)
+      })
+      
+      
+ 
